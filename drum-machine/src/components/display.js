@@ -36,7 +36,7 @@ class Display extends React.Component {
       url: "http://dight310.byu.edu/media/audio/FreeLoops.com/3/3/Free%20Drum%20Snare%203-945-Free-Loops.com.mp3"
     },
     {
-      keyCoe: 65,
+      keyCode: 65,
       keyTrigger: 'A',
       id: 'Tom Tom',
       url: "http://cd.textfiles.com/maxsounds/WAV/EFEITOS/MT10.WAV"
@@ -74,7 +74,7 @@ class Display extends React.Component {
   ];
     return (
       <div id="display">
-        <DrumPad keyTrigger={drumNotes[0].keyTrigger} beat={drumNotes[0].url} id={drumNotes[0].id} keycode={drumNotes[0].keyCode} />
+        <DrumPad keyTrigger={drumNotes[0].keyTrigger} beat={drumNotes[0].url} id={drumNotes[0].id} keycode={81} />
         <DrumPad keyTrigger={drumNotes[1].keyTrigger} beat={drumNotes[1].url} id={drumNotes[1].id} keycode={drumNotes[1].keyCode}/>
         <DrumPad keyTrigger={drumNotes[2].keyTrigger} beat={drumNotes[2].url} id={drumNotes[2].id} keycode={drumNotes[2].keyCode}/>
         <DrumPad keyTrigger={drumNotes[3].keyTrigger} beat={drumNotes[3].url} id={drumNotes[3].id} keycode={drumNotes[3].keyCode}/>
