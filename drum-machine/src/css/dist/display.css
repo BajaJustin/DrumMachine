@@ -1,0 +1,10 @@
+#display {
+  background-color: #E9C46A;
+  border: 6px solid #F4A261;
+  color: #264653;
+  width: 270px;
+  height: 100%;
+}
+#display #notePlayed {
+  text-align: center;
+}

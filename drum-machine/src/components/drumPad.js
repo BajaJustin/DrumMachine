@@ -1,5 +1,7 @@
 import React from 'react';
 
+// CSS Import
+import '../css/drumPad.css';
 class DrumPad extends React.Component {
   constructor(props){
     super(props);
@@ -19,6 +21,8 @@ class DrumPad extends React.Component {
   }
   playAudio() {
     const audio = document.getElementById(this.props.keyTrigger);
+    const innerText = document.getElementById("notePlayed");
+    innerText.innerHTML = this.props.id;
     audio.currentTime = 0;
     audio.play();
   }

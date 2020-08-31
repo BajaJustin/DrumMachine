@@ -1,0 +1,24 @@
+$padWidth: 80px;
+$padHeight: 70px;
+$blue: #6494AA; // Air Superiority Blue
+$gray: #CCCCCC; // Light Gray
+
+.drum-pad {
+  button {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: $gray;
+    color: $blue;
+    width: $padWidth;
+    height: $padHeight;
+    border: 2px solid $blue;
+    border-radius: 5px;
+    box-shadow: 0 5px #666;
+    margin: 5px;
+    float: left;
+    cursor: pointer;
+  }
+  button:active {
+    background-color: #E9C46A;
+    transform: translateY(2px);
+  }
+}

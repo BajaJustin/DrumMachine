@@ -3,19 +3,16 @@ import React from 'react';
 // Components
 import DrumPad from './drumPad';
 
+// CSS
+import '../css/display.css';
+
 class Display extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      pressedKey: ''
+      pressedNote: 'Press a Key'
     };
-    this.testing = this.testing.bind(this);
   }
-
-  testing() {
-    alert("works!");
-  }
-
   render() {
     const drumNotes = [{
       keyCode: 81,
@@ -83,6 +80,7 @@ class Display extends React.Component {
         <DrumPad keyTrigger={drumNotes[6].keyTrigger} beat={drumNotes[6].url} id={drumNotes[6].id} keycode={drumNotes[6].keyCode}/>
         <DrumPad keyTrigger={drumNotes[7].keyTrigger} beat={drumNotes[7].url} id={drumNotes[7].id} keycode={drumNotes[7].keyCode}/>
         <DrumPad keyTrigger={drumNotes[8].keyTrigger} beat={drumNotes[8].url} id={drumNotes[8].id} keycode={drumNotes[8].keyCode}/>
+        <p id="notePlayed">{this.state.pressedNote}</p>
       </div>
     )
   }

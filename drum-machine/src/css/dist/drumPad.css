@@ -1,0 +1,17 @@
+.drum-pad button {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #CCCCCC;
+  color: #6494AA;
+  width: 80px;
+  height: 70px;
+  border: 2px solid #6494AA;
+  border-radius: 5px;
+  box-shadow: 0 5px #666;
+  margin: 5px;
+  float: left;
+  cursor: pointer;
+}
+.drum-pad button:active {
+  background-color: #E9C46A;
+  transform: translateY(2px);
+}

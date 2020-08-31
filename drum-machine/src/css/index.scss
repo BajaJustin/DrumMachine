@@ -1,0 +1,16 @@
+$background-color: #E76F51; // Burnt Sienna
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
+  height: 100vh;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: $background-color;
+}
