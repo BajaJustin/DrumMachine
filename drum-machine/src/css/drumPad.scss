@@ -2,6 +2,8 @@ $padWidth: 80px;
 $padHeight: 70px;
 $blue: #6494AA; // Air Superiority Blue
 $gray: #CCCCCC; // Light Gray
+$defaultButtonColor: #666;
+$activeButtonColor: #E9C46A;
 
 .drum-pad {
   button {
@@ -12,13 +14,13 @@ $gray: #CCCCCC; // Light Gray
     height: $padHeight;
     border: 2px solid $blue;
     border-radius: 5px;
-    box-shadow: 0 5px #666;
+    box-shadow: 0 5px $defaultButtonColor;
     margin: 5px;
     float: left;
     cursor: pointer;
   }
   button:active {
-    background-color: #E9C46A;
+    background-color: $activeButtonColor;
     transform: translateY(2px);
   }
 }

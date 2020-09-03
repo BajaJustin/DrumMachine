@@ -1,9 +1,15 @@
+$innerBackgroundColor:  #E9C46A; // Orange Yellow Crayola
+$fontColor: #264653; // Charcoal
+$borderColor: #F4A261;
+$width: 270px;
+$height: 100%;
+
 #display {
-  background-color: #E9C46A; // Orange Yellow Crayola
-  border: 6px solid #F4A261;
-  color: #264653; // Charcoal
-  width: 270px;
-  height: 100%;
+  background-color: $innerBackgroundColor; // Orange Yellow Crayola
+  border: 6px solid $borderColor;
+  color: $fontColor;
+  width: $width;
+  height: $height;
   #notePlayed {
     text-align: center;
   }
